@@ -1,17 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
 
-  const username = "Ege Su";
+  const userName = "";
+
+  const getFullName = () => {
+    return "Ege Su Açıkgöz";
+  }
  
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Merhaba {username}</h1>
+        <h1>Merhaba {userName ? userName : "Anonymus"}</h1>
         <hr></hr>
-        <p>
-          React Merhaba.
+        <p className='highlight'>
+          Tekrar merhaba.
+
+          Your full name is: {getFullName()}
         </p>
       </header>
     </div>
