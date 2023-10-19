@@ -1,8 +1,14 @@
 import './App.css';
+import './components/Counter.css';
+
+import Counter from './components/Counter';
+import { useState } from 'react';
 
 function App() {
 
-  const userName = "";
+  const userName = "egesua";
+
+  const [email, setEmail] = useState("egesu06@gmail.com")
 
   const getFullName = () => {
     return "Ege Su Açıkgöz";
@@ -19,6 +25,7 @@ function App() {
           Your full name is: {getFullName()}
         </p>
       </header>
+      <Counter greet="Merhaba" userName={userName} email={email} />
     </div>
   );
 }
