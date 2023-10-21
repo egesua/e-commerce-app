@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-header {
+  background-color: rgb(45, 44, 44);
+  color: rgb(236, 236, 236);
+  padding: 1rem;
+}
+
+.page-body {
+  display: flex;
+  flex: 1;
+  background-color: bisque;
+}
+
+.side-bar {
+  width: 20%;
+  background-color: rgb(10, 35, 174);
+  color: white;
+  padding: 1rem;
+}
+
+.page-content {
+  flex: 1;
+}
+
+.page-footer {
+  background-color: rgb(1, 1, 0);
+  color: white;
+  padding: 1rem;
+}
