@@ -1,6 +1,7 @@
+import { Button } from "reactstrap";
+
 const CounterDisplay = (props) => {
-  const { userName, counter, addAction, decreaseAction, resetAction } =
-    props;
+  const { userName, counter, addAction, decreaseAction, resetAction } = props;
 
   return (
     <div className="counter-card">
@@ -8,9 +9,15 @@ const CounterDisplay = (props) => {
       <hr />
       <div className="counter">{counter}</div>
       <div className="controls">
-        <button onClick={addAction}>+</button>
-        <button onClick={decreaseAction}>-</button>
-        <button onClick={resetAction}>Reset</button>
+        <Button active color="primary me-1" size="sm" onClick={addAction}>
+          +
+        </Button>
+        <Button active color="primary me-1" size="sm" onClick={decreaseAction}>
+          -
+        </Button>
+        <Button active color="danger me-1" size="sm" onClick={resetAction}>
+          Reset
+        </Button>
       </div>
     </div>
   );

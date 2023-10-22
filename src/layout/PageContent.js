@@ -1,11 +1,13 @@
 import CounterPage from "../pages/CounterPage";
 import MainPage from "../pages/MainPage";
+import ProductsPage from "../pages/ProductsPage";
 
 const PageContent = ({ userName }) => {
     return (
         <div className="page-content">
             <MainPage />
             <CounterPage userName={userName}/>
+            <ProductsPage />
         </div>
     )
 }
