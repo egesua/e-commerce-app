@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Button,
   Card,
@@ -12,8 +13,7 @@ import {
   ModalHeader,
 } from "reactstrap";
 
-const ProductsPage = () => {
-  const products = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const ProductsPage = ({ products }) => {
 
   const [showModal, setShowModal] = useState(false);
   const toggle = () => setShowModal(!showModal);
@@ -32,19 +32,22 @@ const ProductsPage = () => {
             }}
             key={product}
           >
-            <img alt="Sample" src="https://picsum.photos/300/200" />
+            <img alt="Sample" src={product.img} />
             <CardBody>
-              <CardTitle tag="h5">Product {product}</CardTitle>
+              <CardTitle tag="h5">{product.name}</CardTitle>
               <CardSubtitle className="mb-2 text-muted" tag="h6">
-                Card subtitle
+                {product.price} $
               </CardSubtitle>
               <CardText>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                {product.description}
               </CardText>
-              <Button color="primary" onClick={toggle}>Sepete Ekle</Button>
+              <div className="d-flex justify-content-around">
+              <Button color="primary" onClick={toggle}>Add to Cart</Button>
+              <Link className="icon-link" to={"/products/" + product.id}>Inspect</Link>
+              </div>
             </CardBody>
           </Card>
+  
         ))}
       </div>
       <Modal isOpen={showModal} toggle={toggle}>

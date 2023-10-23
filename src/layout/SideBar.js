@@ -1,7 +1,11 @@
+import { NavLink } from "react-router-dom";
+
 const SideBar = () => {
     return (
         <div className="side-bar">
-            Side Bar
+            <NavLink to="/" exact>Main Page</NavLink>
+            <NavLink to="/products" exact>Products Page</NavLink>
+            <NavLink to="/counter-page" exact>Counter Page</NavLink>
         </div>
     )
 }
