@@ -6,6 +6,7 @@ const SideBar = () => {
             <NavLink to="/" exact>Main Page</NavLink>
             <NavLink to="/products" exact>Products Page</NavLink>
             <NavLink to="/counter-page" exact>Counter Page</NavLink>
+            <NavLink to="/login" exact>Login Page</NavLink>
         </div>
     )
 }

@@ -3,6 +3,7 @@ import CounterPage from "../pages/CounterPage";
 import MainPage from "../pages/MainPage";
 import ProductsPage from "../pages/ProductsPage";
 import ProductDetailPage from "../pages/ProductDetailPage";
+import LoginPage from "../pages/LoginPage";
 
 const PageContent = ({ userName, products }) => {
   return (
@@ -23,6 +24,11 @@ const PageContent = ({ userName, products }) => {
         </Route>
         <Route path="/products/:productId" exact element={<ProductDetailPage />} />
         <Route path="/" exact element={<MainPage />} />
+        <Route
+          path="/login"
+          element={<LoginPage />}
+        >
+        </Route>
       </Routes>
     </div>
   );
