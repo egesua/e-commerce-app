@@ -14,6 +14,11 @@ const LoginPage = () => {
          });
     }
 
+    const passChangeHandler = (e) => {
+        const { value } = e.target;
+        setLoginFormData({...loginFormData, password: value});
+    }
+
     useEffect(() => {
         console.log("loginFormData: ", loginFormData)
     }, [loginFormData]); 

@@ -22,7 +22,7 @@ const PageContent = ({ userName, products }) => {
         <Route path="/products" exact element={<ProductsPage products={products}/>}>
           
         </Route>
-        <Route path="/products/:productId" exact element={<ProductDetailPage />} />
+        <Route path="/products/:productId" exact element={<ProductDetailPage products={products}/>} />
         <Route path="/" exact element={<MainPage />} />
         <Route
           path="/login"
