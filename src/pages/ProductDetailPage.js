@@ -8,10 +8,6 @@ const ProductDetailPage = ({ products }) => {
 
   const { productId } = useParams();
 
-  const navBack = () => {
-    navigate.goBack();
-  }
-
   useEffect(() => {
     const pro = products?.find((p) => p.id === productId);
     setProduct(pro);

@@ -5,6 +5,7 @@ const SideBar = () => {
         <div className="side-bar">
             <NavLink to="/" exact>Main Page</NavLink>
             <NavLink to="/products" exact>Products Page</NavLink>
+            <NavLink to="/create-product" exact>Add New Product</NavLink>
             <NavLink to="/counter-page" exact>Counter Page</NavLink>
             <NavLink to="/login" exact>Login Page</NavLink>
         </div>

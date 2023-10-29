@@ -4,6 +4,7 @@ import MainPage from "../pages/MainPage";
 import ProductsPage from "../pages/ProductsPage";
 import ProductDetailPage from "../pages/ProductDetailPage";
 import LoginPage from "../pages/LoginPage";
+import CreateProductPage from "../pages/CreateProductPage";
 
 const PageContent = ({ userName, products }) => {
   return (
@@ -27,6 +28,11 @@ const PageContent = ({ userName, products }) => {
         <Route
           path="/login"
           element={<LoginPage />}
+        >
+        </Route>
+        <Route
+          path="/create-product"
+          element={<CreateProductPage />}
         >
         </Route>
       </Routes>
