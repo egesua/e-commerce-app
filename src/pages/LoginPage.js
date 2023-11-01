@@ -59,6 +59,7 @@ const LoginPage = () => {
         value={loginFormData.name}
         onChange={inputChangeHandler}
       ></input>
+      <br />
 
       <label htmlFor="user-mail">Email</label>
       <input
@@ -68,6 +69,7 @@ const LoginPage = () => {
         value={loginFormData.email}
         onChange={inputChangeHandler}
       />
+      <br />
 
       <label htmlFor="user-pass">Password</label>
       <input
@@ -77,6 +79,7 @@ const LoginPage = () => {
         value={loginFormData.password}
         onChange={inputChangeHandler}
       />
+      <br />
 
       <label htmlFor="user-remember">Remember Me</label>
       <input
@@ -86,6 +89,27 @@ const LoginPage = () => {
         checked={loginFormData.rememberMe}
         onChange={inputChangeHandler}
       />
+      <br />
+
+      <label htmlFor="gender-male">Male</label>
+      <input
+        id="gender-male"
+        type="radio"
+        name="gender"
+        value="male"
+        onChange={inputChangeHandler}
+      />
+      <br />
+
+      <label htmlFor="gender-female">Female</label>
+      <input
+        id="gender-female"
+        type="radio"
+        name="gender"
+        value="female"
+        onChange={inputChangeHandler}
+      />
+      <br />
 
       <button type="submit">Login</button>
       <button

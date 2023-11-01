@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import ProductForm from "../components/ProductForm";
+import ProductFormYup from "../components/ProductFormYUP";
 
 const loginFormDataInitial = {
   name: "",
@@ -53,7 +53,7 @@ const CreateProductPage = () => {
     <div>
       <h1>Create Product</h1>
       <hr />
-      <ProductForm />
+      <ProductFormYup />
     </div>
   );
 };

@@ -1,15 +1,16 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-const ProductForm = () => {
-  const productDataInitial = {
-    name: "",
-    description: "",
-    img: "",
-    price: 0,
-    stock: 0,
-  };
 
+const productDataInitial = {
+  name: "",
+  description: "",
+  img: "",
+  price: 0,
+  stock: 0,
+};
+
+const ProductForm = () => {
   const [productData, setProductData] = useState([]);
 
   const inputChangeHandler = (e) => {
