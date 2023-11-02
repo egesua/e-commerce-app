@@ -3,8 +3,8 @@ import CounterPage from "../pages/CounterPage";
 import MainPage from "../pages/MainPage";
 import ProductsPage from "../pages/ProductsPage";
 import ProductDetailPage from "../pages/ProductDetailPage";
-import LoginPage from "../pages/LoginPage";
 import CreateProductPage from "../pages/CreateProductPage";
+import LoginHookPage from "../pages/LoginHookPage";
 
 const PageContent = ({ userName, products }) => {
   return (
@@ -27,7 +27,7 @@ const PageContent = ({ userName, products }) => {
         <Route path="/" exact element={<MainPage />} />
         <Route
           path="/login"
-          element={<LoginPage />}
+          element={<LoginHookPage />}
         >
         </Route>
         <Route
