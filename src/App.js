@@ -1,10 +1,11 @@
-import './App.css';
-import './components/Counter.css';
-
 import { useState, useEffect } from 'react';
 import Main from './layout/Main';
 import axios from 'axios';
 
+import './components/Counter.css';
+import "react-toastify/dist/ReactToastify.css";
+import './App.css';
+import { ToastContainer } from 'react-toastify';
 function App() {
   const [userName, setUserName] = useState("AŞŞŞŞKO");
   const [products, setProducts] = useState([]);
@@ -17,7 +18,12 @@ function App() {
       });
   }, []);
 
-  return <Main userName={userName} products={products}/>;
+  return (
+    <>
+  <Main userName={userName} products={products}/>
+  <ToastContainer/>
+  </>
+  );
 }
 
 export default App;
