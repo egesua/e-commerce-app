@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import './App.css';
 import { ToastContainer } from 'react-toastify';
 function App() {
-  const [userName, setUserName] = useState("AŞŞŞŞKO");
+  const [userName, setUserName] = useState("Anonymus");
   const [products, setProducts] = useState([]);
 
   useEffect(() => {

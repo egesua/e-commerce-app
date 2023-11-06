@@ -6,6 +6,7 @@ import ProductDetailPage from "../pages/ProductDetailPage";
 import CreateProductPage from "../pages/CreateProductPage";
 import LoginHookPage from "../pages/LoginHookPage";
 
+
 const PageContent = ({ userName, products }) => {
   return (
     <div className="page-content">
